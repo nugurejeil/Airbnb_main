@@ -142,7 +142,7 @@ var cbpBGSlideshow = (function() {
 		// "reverse" : false
 	})
 	.setClassToggle(".index_main_list_carousel", "fade-in")
-	.addIndicators()
+	// .addIndicators()
 	.addTo(controller);
 
 
@@ -151,11 +151,8 @@ var cbpBGSlideshow = (function() {
 		// "reverse" : false
 	})
 	.setClassToggle(".index_main_list_block", "fade-in")
-	// .setClassToggle(".index_main_list_block", "item2")
-	// .setClassToggle(".index_main_list_block", "item3")
-	// .setClassToggle(".index_main_list_block", "item4")
-	// .setClassToggle(".index_main_list_block", "item5")
-	.addIndicators()
+
+	// .addIndicators()
 	.addTo(controller);
 	
 }(this, this.jQuery));
