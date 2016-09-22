@@ -128,3 +128,37 @@ var cbpBGSlideshow = (function() {
 	return { init : init };
 
 })();
+
+// scrollMagic
+
+
+
+(function(global, $){
+  "use strict";
+
+  var controller = new ScrollMagic.Controller();
+	var carousel_scene = new ScrollMagic.Scene({
+		"triggerElement" : ".index_main_list_carousel",
+		// "reverse" : false
+	})
+	.setClassToggle(".index_main_list_carousel", "fade-in")
+	.addIndicators()
+	.addTo(controller);
+
+
+	var list_scene = new ScrollMagic.Scene({
+		"triggerElement" : ".index_main_list",
+		// "reverse" : false
+	})
+	.setClassToggle(".index_main_list_block", "fade-in")
+	// .setClassToggle(".index_main_list_block", "item2")
+	// .setClassToggle(".index_main_list_block", "item3")
+	// .setClassToggle(".index_main_list_block", "item4")
+	// .setClassToggle(".index_main_list_block", "item5")
+	.addIndicators()
+	.addTo(controller);
+	
+}(this, this.jQuery));
+
+
+

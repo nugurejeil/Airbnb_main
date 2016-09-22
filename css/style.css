@@ -457,7 +457,11 @@ main{
 }
 .index_main_list_carousel{
   position: relative;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(50px);
 }
+
 .index_main_list_carousel > button{
   position: absolute;
   width: 54px;
@@ -816,6 +820,18 @@ main{
 /*----------------  font  -----------------*/
 
 /*----------------  state  -----------------*/
+.index_main_list_block{
+  opacity: 0;
+  transition: 1s;
+}
+.index_main_list_block.fade-in{
+  opacity: 1;
+}
+
+.index_main_list_carousel.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
 /*----------------  state  -----------------*/
 
 /*----------------  theme  -----------------*/
