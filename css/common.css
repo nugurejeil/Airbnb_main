@@ -1,0 +1,28 @@
+.clearfix::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.readable-hidden {
+  overflow: hidden;
+  position: absolute;
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+
+/*.nav_dropdown{
+  display: none;
+}*/
+
+.play_video{
+  display: block;
+}
+
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}

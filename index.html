@@ -8,9 +8,434 @@
   <meta name="description" content="191개 국가의 놀랍고 독특한 숙박 시설을 찾아보세요. 에어비앤비를 통해 전 세계 어디를 가도 내집처럼 느끼실 수 있습니다.">
   <meta name="keywords" content="">
   <meta name="author" content="JaeHyun Han">
-  <link rel="shortcut icon" href="https://a1.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+  <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a1.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
+  <li지k rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <!-- slider -->
+  <script src="js/modernizr.custom.js"></script>
+  <style>
+    /*임시 작성*/
+    .main_search_menu_dummy{
+      margin-top:30px;
+    }
+  </style>
 </head>
-<body>
+<body id="body">
+  <div class="full_screen_video_wrapper">
+    <video poster="#" id="full_screen_video_id" class="full_screen_video">
+    <source src="videos/0509_AIRBNB_ANTHEM_30s.mp4">
+    </video>
+    <a href="#" class="full_screen_video_btn"></a>
+    <i class="fa fa-times fa-3x full_screen_video_quit_btn" aria-hidden="true"></i>
+  </div>
+<!-- <svg viewBox="0 0 1000 1000" data-reactid=".3.0.0.0.1.0.0.0.1.0"><path d="M694.4 242.4l249.1 249.1c11 11 11 21 0 32L694.4 772.7c-5 5-10 7-16 7s-11-2-16-7c-11-11-11-21 0-32l210.1-210.1H67.1c-13 0-23-10-23-23s10-23 23-23h805.4L662.4 274.5c-21-21.1 11-53.1 32-32.1z" data-reactid=".3.0.0.0.1.0.0.0.1.0.0"></path></svg> -->
+
+  <section id="index_header">
+  <h2 class="readable-hidden">header</h2>
+    <nav>
+      <div class="index_header_menus clearfix">
+        <div class="index_header_logo">
+          <a href="index.html" class="home_btn">
+            <img src="img/Airbnb_Logo.svg" alt="#">
+          </a>
+        </div>
+        <div class="index_header_search">
+          <form action="#">
+            <input type="text" placeholder="어디로 가세요?" class="font_smaller">
+          </form>
+        </div>
+        <div class="index_header_menus_right_side clearfix">
+          <div class="index_header_host">
+            <a href="#">
+              <span>호스팅 하기</span>
+            </a>
+            <!-- <ul class="index_header_host_menus nav_dropdown">
+              <li><a href="#">알림판</a></li>
+              <li><a href="#">숙소 관리</a></li>
+              <li><a href="#">숙소 등록</a></li>
+              <li><a href="#">예약 관리</a></li>
+              <li><a href="#">대금 수령 내역</a></li>
+              <li><a href="#">호스트 추천하기</a></li>
+              <li><a href="#">후기</a></li>
+              <li><a href="#">따뜻한 손님맞이</a></li>
+            </ul> -->
+          </div>
+          <!-- <li class="index_header_message">
+            <a href="#">
+              <span>메시지</span>
+            </a>
+            <ul>
+              <li>
+                <span>메시지 (0)</span>
+                <a href="#">메시지 보기</a>
+              </li>
+              <li>
+                <span>알림 (0)</span>
+                <a href="#">알림판 보기</a>
+              </li>
+            </ul>
+          </li> -->
+          <div class="index_header_help">
+            <a href="#">
+              <span>도움말</span>
+            </a>
+            <!-- <ul class="nav_dropdown">
+              <li>
+                <form action="#">
+                  <input type="text" placeholder="어떻게 도와드릴까요?">
+                </form>
+              </li>
+              <li class="index_header_help_recommend">
+                <ul>
+                  <li>추천 도움말</li>
+                  <li><a href="#">전문 사진촬영 서비스에 대해 알아보려면 어떻게 하나요?</a></li>
+                  <li><a href="#">호스트로서 예약 취소하기</a></li>
+                  <li><a href="#">숙박대금은 언제 지급되나요?</a></li>
+                  <li><a href="#">분쟁해결센터란 무엇인가요?</a></li>
+                  <li><a href="#">전문 사진촬영 서비스를 신청한 후의 절차는 어떻게 진행되나요?</a></li>
+                </ul>
+              </li>
+              
+              <li>
+                <a href="#">도움말 센터</a>
+                <a href="#">커뮤니티에 물어보세요.</a>
+              </li>
+            </ul> -->
+          </div>
+          <div class="index_header_join">
+            <a href="#">
+              <span>회원가입</span>
+            </a>
+          </div>
+          <div class="index_header_login">
+            <a href="#">
+              <span>로그인</span>
+            </a>
+          </div>
+          <!-- <li class="index_header_user">
+            <a href="#">
+              <span>유저이름</span>
+            </a>
+            <ul>
+              <li><a href="#">여행 목록</a></li>
+              <li><a href="#">위시리스트</a></li>
+              <li><a href="#">프로필 수정</a></li>
+              <li><a href="#">친구 추천</a></li>
+              <li><a href="#">계정 관리</a></li>
+              <li><a href="#">출장 프로그램</a></li>
+              <li><a href="#">나의 가이드북</a></li>
+              <li><a href="#">로그아웃</a></li>
+            </ul>
+          </li> -->
+        </div>
+      </div>
+    </nav>
+  </section>
+  <main>
+    <article class="index_main_video">
+      <video src="videos/background-video.mp4" poster="nice-default.jpg" autoplay loop></video>
+      <!-- <video src="videos/0509_AIRBNB_ANTHEM_30s.mp4" poster="nice-default.jpg" autoplay class="full_screen_video"></video> -->
+      <h1 class="font_larger">여행은 살아보는 거야</h1>
+      <h2 class="font_bold">191개 이상 국가의 현지 호스트의 집을 예약하고 살아보는 여행을 경험해 보세요.</h2>
+      <button type="button" class="play_full_video_btn"></button>
+
+      <div class="index_main_video_hostel_search">
+        <div>
+        <img src="img/main_search_menu.png" alt="#" width="1032" height="42" class="main_search_menu_dummy">
+        <!-- <form action="#" class="clearfix">
+          <div class="index_main_video_hostel_search_place">
+            <input type="text" placeholder="어디로 가세요?" class="font_small">
+          </div>
+          <div class="index_main_video_hostel_search_date">
+            <input type="text" placeholder="체크인" class="font_small">
+            <input type="text" placeholder="체크아웃" class="font_small">
+          </div>
+          <div>
+            <select class="font_small">
+              <option value="1">숙박 인원 1명</option>
+              <option value="2">숙박 인원 2명</option>
+              <option value="3">숙박 인원 3명</option>
+              <option value="4">숙박 인원 4명</option>
+              <option value="5">숙박 인원 5명</option>
+            </select>
+          </div>
+          <div>
+            <input type="submit" value="숙소 검색" class="font_small">
+          </div>
+        </form> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="index_main_event clearfix">
+      
+      <img src="img/welcome.jpg" alt="#">
+      <div class="index_main_event_text font_small">
+        <h2 class="font_bold">호스팅을 시작하면 무궁무진한 기회의 세상이 열립니다.</h2>
+        <p>집에 있는 여유공간을 게스트와 공유하여 수입을 창출하세요.</p>
+        <a href="#" class="font_bold">오늘 등록하세요!</a>
+      </div>
+    </article>
+
+    <article class="index_main_list">
+      <h2 class="font_large font_bold">두근두근 세계 여행</h2>
+      <p class="font_small">세계 곳곳을 누벼 보세요</p> 
+
+      <!-- 숙소 리스트중 첫번째 블록-->
+      <div class="index_main_list_block1">
+        <ul class="index_main_list_items clearfix">
+          <li class="index_main_list_block long mobile_extend">
+            <a href="#">
+            <span>파리</span></a>
+          </li>
+          <li class="index_main_list_block short mobile_extend">
+            <a href="#" class="index_main_list_block1_host">
+              <figure>
+                <div>
+                  <img src="https://a1.muscache.com/im/users/24507857/profile_pic/1417842771/original.jpg?aki_policy=profile_medium" alt="#" class="index_main_list_block1_user_pic">
+                </div>
+                <figcaption>
+                  <p class="index_main_list_block1_user_name font_mid">대표호스트: kali Satyagaraha</p>
+                  <p class="index_main_list_block1_user_location font_smaller">케이프타운</p>
+                </figcaption>
+              </figure>
+              <div class="index_main_list_block_user_price">
+                <sup class="font_smaller font_bold">&#8361;</sup>
+                <strong class="font_mid">29562</strong>  
+              </div>
+            </a>
+          </li>
+          <li class="index_main_list_block short mobile_extend"><a href="#"><span>서울</span></a></li>
+          <li class="index_main_list_block short mobile_remove"><a href="#"><span>로마</span></a></li>
+          <li class="index_main_list_block short mobile_remove"><a href="#"><span>베니스에서 휴식하기</span></a></li>
+        </ul>
+      </div>
+
+      <!-- 숙소 리스트중 두번째 블록-->
+      <div class="index_main_list_block2 clearfix">
+        <ul class="index_main_list_block2_left index_main_list_items clearfix">
+          <li class="index_main_list_block short mobile_extend">
+            <a href="#" class="index_main_list_block2_host">
+              <figure>
+                <div>
+                  <img src="https://a0.muscache.com/im/users/28740750/profile_pic/1425477836/original.jpg?aki_policy=profile_medium" alt="#" class="index_main_list_block2_user_pic">
+                </div>
+                <figcaption>
+                  <p class="index_main_list_block2_user_name font_mid">대표호스트: Stephane</p>
+                  <p class="index_main_list_block2_user_location font_smaller">파리</p>
+                </figcaption>
+              </figure>
+              <div class="index_main_list_block_user_price">
+                <sup class="font_smaller font_bold">&#8361;</sup>
+                <strong class="font_mid">190708</strong>  
+              </div>
+            </a>
+          </li>
+          <li class="index_main_list_block short mobile_remove">
+            <a href="#"><img src="#" alt="#"><span>오사카</span></a>
+          </li>
+        </ul>
+
+        <ul class="index_main_list_block2_right index_main_list_items mobile_remove clearfix">
+          <li class="index_main_list_block long"><a href="#"><span>도쿄</span></a></li>
+          <li class="index_main_list_block short"><a href="#"><span>런던</span></a></li>
+          <li class="index_main_list_block short"><a href="#"><span>방콕에서 쇼핑하기</span></a></li>
+        </ul>
+
+      </div>
+
+
+      <div class="index_main_list_carousel">
+        <button type="button" class="index_main_list_carousel_left_btn"></button>
+        <button type="button" class="index_main_list_carousel_right_btn"></button>
+        <ul id="cbp-bislideshow">
+          <li class="index_main_list_carousel_video_content">
+            <img src="img/beMyHome.jpg" alt="image01"/>
+            <div>
+              <h3 class="font_larger">낯선 도시에서 우리집을 만나다</h3>
+              <p class="font_mid">전 세계 에어비앤비 호스트들이 <br>내 집처럼 편안한 분위기를 만들기 위해 어떤 노력을 하고 있는지 알아보세요.</p> 
+            </div>
+            <button type="button"></button>
+          </li>
+          <li class="index_main_list_carousel_video_content">
+            <img src="img/belo.jpg" alt="image01"/>
+            <div>
+              <h3 class="font_larger">벨로(BÉLO)를 소개합니다</h3>
+              <p class="font_mid">에어비앤비 심볼의 따뜻한 소속감에 관한 이야기를 들어보세요.</p> 
+            </div>
+            <button type="button"></button>
+          </li>
+          <li class="index_main_list_carousel_link_content_btn">
+            <img src="img/rentals-banner.png" alt="image01"/>
+            <div>
+              <h3 class="font_larger">어디에서나 집에서처럼</h3>
+              <p class="font_mid">에어비앤비에서라면 휴가지에서도 항상 집에서처럼 편안하게<br> 지낼 수 있습니다. 고급 빌라에서 가족용 아파트까지 어떤<br> 숙소든 찾아보세요.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="index_main_community">
+      <h2 class="font_large font_bold">에어비앤비 커뮤니티</h2>
+      <ul class="clearfix">
+        <li>
+          <a href="#" class="index_main_community_notice">
+            <figure>
+              <!-- <img src="#" alt="#">
+              <img src="#" alt="#"> -->
+              <figcaption>
+                <h3 class="font_mid font_bold">나만의 에어비앤비를 만들어 보세요.</h3>
+                <p>여러분만의 마크를 만들고 스토리를 들려주세요.</p> 
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="index_main_community_traveling">
+            <strong class="font_bold">여행</strong>
+            <figure>
+              
+              <figcaption>
+                
+                <h3 class="font_large font_bold">게리와 리앤</h3>
+                <p>게리와 리앤은 곳곳을 누비며 현지에서만 경험할 수 있는 특별한 액티비티를 찾고 있습니다.</p>
+                <u>에어비앤비 여행에 대해 자세히 알아보세요.</u>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="index_main_community_business_travel">
+            <strong class="font_bold">출장 프로그램</strong>
+            <figure>
+             
+              <figcaption>
+                
+                <h3 class="font_large font_bold">에어비앤비 출장 프로그램</h3>
+                <p>출장을 가서도 어디에서나 내 집처럼 편안하게 머무세요.</p>
+                <u>에어비앤비 출장 프로그램에 등록하세요.</u>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="index_main_community_hosting">
+            <strong class="font_bold">호스트</strong>
+            <figure>
+
+              <figcaption>
+                
+                <h3 class="font_large font_bold">패트리샤</h3>
+                <p>전문 사진사인 패트리샤는 게스트가 상하이의 예술품을 감상할 수 있도록 도와주는 것을 좋아합니다.</p>
+                <u>에어비앤비 호스팅에 대해 자세히 알아보세요.</u>
+              </figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+      
+    </article>
+  </main>
+
+
+  <section id="index_footer">
+  <h2 class="readable-hidden">footer</h2>
+
+  <div class="index_footer_company clearfix">
+    <div class="index_footer_company_selectors">
+      <div class="index_footer_company_selectors_options font_small">
+        <div>
+          <select>
+            <option value="ko">한국어</option>
+            <option value="ch">중국어</option>
+            <option value="jp">일본어</option>
+          </select>
+        </div>
+        <div>
+          <select>
+            <option value="koc">KRW</option>
+            <option value="chc">JPY</option>
+            <option value="jpc">MAD</option>
+          </select>
+        </div>
+      </div>
+      <div class="index_footer_company_selectors_contact">
+        <p>국내 &colon; <a href="tel:0808220230">080 822 0230</a>(수신자 부담)</p>
+        <p>해외 &colon; <a href="tel:+82260222499">+82 2 6022 2499</a>(발신자 부담)</p>
+      </div>
+    </div>
+
+    <div class="index_footer_company_story">
+      <h4 class="font_small font_bold">회사이야기</h4>
+      <ul>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">채용정보</a></li>
+        <li><a href="#">미디어</a></li>
+        <li><a href="#">블로그</a></li>
+        <li><a href="#">도움말</a></li>
+        <li><a href="#">정책</a></li>
+        <li><a href="#">재해 대책</a></li>
+        <li><a href="#">이용약관</a></li>
+      </ul>
+    </div>
+
+    <div class="index_footer_company_discover">
+      <h4 class="font_small font_bold">둘러보기</h4>
+      <ul>
+        <li><a href="#">신뢰와 안전</a></li>
+        <li><a href="#">친구 추천</a></li>
+        <li><a href="#">에어비앤비 추천</a></li>
+        <li><a href="#">앱 다운로드</a></li>
+        <li><a href="#">에어비앤비 액션</a></li>
+        <li><a href="#">출장 프로그램</a></li>
+        <li><a href="#">여행지 찾기</a></li>
+      </ul>
+    </div>
+
+    <div class="index_footer_company_hosting">
+      <h4 class="font_small font_bold">호스팅하기</h4>
+      <ul>
+        <li><a href="#">호스팅을 해야 하는 이유</a></li>
+        <li><a href="#">따뜻한 손님맞이</a></li>
+        <li><a href="#">책임감 있는 호스트 되기</a></li>
+        <li><a href="#">숙소 안전</a></li>
+        <li><a href="#">즉시 예약</a></li>
+      </ul>
+    </div>
+
+  </div>
   
+  <div class="index_footer_social">
+    <h4 class="font_small font_bold">에어비앤비 소셜미디어 채널</h4>
+    <ul class="clearfix">
+      <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+    <small>&copy; Airbnb, Inc.</small>
+  </div>
+  
+
+  
+  </section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.imagesloaded.min.js"></script>
+    <script src="js/cbpBGSlideshow.js"></script>
+    <script>
+      $(function() {
+        cbpBGSlideshow.init();
+      });
+    </script>
+  <script src="js/video.js"></script>
+
 </body>
 </html>

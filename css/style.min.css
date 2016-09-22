@@ -1,0 +1,13 @@
+@charset "utf-8";html,body,div,span,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,big,cite,code,del,dfn,em,img,q,s,small,strong,var,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;box-sizing:border-box;vertical-align:baseline}
+body{line-height:1;font-size:14px;font-family:"나눔 고딕","Nanum Gothic","맑은 고딕","Malgun Gothic","Apple Gothic","돋움",Dotum,"Helvetica Neue",Helvetica,Arial,sans-serif}
+ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+table{border-collapse:collapse;border-spacing:0}img{vertical-align:bottom}a{color:black;text-decoration:none}u{text-decoration:none}#index_header{margin-top:63px}
+#index_header nav{position:fixed;top:0;left:0;width:100%}.index_header_menus div{float:left;height:63px;line-height:63px}.index_header_logo{position:absolute;top:0;left:0;width:139px;border:1px solid #e0e4e4;background:pink}
+.index_header_search{width:100%;padding-left:139px;padding-right:392px}#index_header .index_header_menus_right_side{position:absolute;top:0;right:0;text-align:center}
+.index_header_host{width:136px;background:gray}.index_header_help{width:87px;background:yellow}.index_header_join{width:92px}.index_header_login{width:77px}
+.index_main_video{height:537px}.index_main_event,.index_main_list{width:1032px;margin:0 auto}.index_main_event img,.index_main_event_text{float:left}.index_main_list_block1>ul>li{float:left}
+.index_main_list_block2 ul{float:left}.index_main_list_block2_right li{float:left}.index_main_list_carousel_left_btn{float:left}.index_main_list_carousel_right_btn{float:right}
+.index_main_list_carousel>ul>li{display:inline-block}.index_main_community>ul>li{float:left}.index_footer_company_selectors,.index_footer_company_story,.index_footer_company_discover,.index_footer_company_hosting{float:left}
+.index_footer_company_selectors_options select{display:block}.index_footer_social li{float:left}.font_smaller{font-size:14px;font-weight:normal}.font_small{font-size:16px;font-weight:normal}
+.font_mid{font-size:24px;font-weight:normal}.font_large{font-size:32px;font-weight:normal}.font_larger{font-size:60px;font-weight:700}.font_bold{font-weight:bold}
+.index_main_video>p{font-size:18px}.index_main_event_text h2{font-size:26px}.index_main_list_items li{font-size:32px;font-weight:bold}
