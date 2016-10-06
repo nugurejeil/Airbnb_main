@@ -9,23 +9,23 @@
   <meta name="keywords" content="">
   <meta name="author" content="JaeHyun Han">
   <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="https://a1.muscache.com/airbnb/static/logotype_favicon-21cc8e6c6a2cca43f061d2dcabdf6e58.ico">
-  <li지k rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <!-- slider -->
   <script src="js/modernizr.custom.js"></script>
-  <style>
+  <!-- <style>
     /*임시 작성*/
     .main_search_menu_dummy{
       margin-top:30px;
     }
-  </style>
+  </style> -->
 </head>
 <body id="body">
   <div class="full_screen_video_wrapper">
     <video poster="#" id="full_screen_video_id" class="full_screen_video">
-    <source src="videos/0509_AIRBNB_ANTHEM_30s.mp4">
+    <source src="https://a0.muscache.com/airbnb/static/Anthem_60.mp4">
     </video>
     <a href="#" class="full_screen_video_btn"></a>
     <i class="fa fa-times fa-3x full_screen_video_quit_btn" aria-hidden="true"></i>
@@ -134,7 +134,7 @@
   </section>
   <main>
     <article class="index_main_video">
-      <video src="videos/background-video.mp4" poster="nice-default.jpg" autoplay loop></video>
+      <video src="https://a0.muscache.com/airbnb/static/P1-background-vid-compressed-2.mp4" poster="nice-default.jpg" autoplay loop></video>
       <!-- <video src="videos/0509_AIRBNB_ANTHEM_30s.mp4" poster="nice-default.jpg" autoplay class="full_screen_video"></video> -->
       <h1 class="font_larger">여행은 살아보는 거야</h1>
       <h2 class="font_bold">191개 이상 국가의 현지 호스트의 집을 예약하고 살아보는 여행을 경험해 보세요.</h2>
@@ -142,17 +142,18 @@
 
       <div class="index_main_video_hostel_search">
         <div>
-        <img src="img/main_search_menu.png" alt="#" width="1032" height="42" class="main_search_menu_dummy">
-        <!-- <form action="#" class="clearfix">
+        <form action="#" class="clearfix">
           <div class="index_main_video_hostel_search_place">
             <input type="text" placeholder="어디로 가세요?" class="font_small">
           </div>
-          <div class="index_main_video_hostel_search_date">
-            <input type="text" placeholder="체크인" class="font_small">
-            <input type="text" placeholder="체크아웃" class="font_small">
+          <div class="index_main_video_hostel_search_date clear">
+            <label for="index_main_check-in" class="readable-hidden">체크인</label>
+            <input type="text" placeholder="체크인" id="index_main_check-in" class="font_small">
+            <label for="index_main_check-out" class="readable-hidden">체크아웃</label>
+            <input type="text" placeholder="체크아웃" id="index_main_check-out" class="font_small">
           </div>
-          <div>
-            <select class="font_small">
+          <div class="index_main_video_hostel_search_client-num select-box-wrapper">
+            <select class="font_small select-box">
               <option value="1">숙박 인원 1명</option>
               <option value="2">숙박 인원 2명</option>
               <option value="3">숙박 인원 3명</option>
@@ -160,10 +161,11 @@
               <option value="5">숙박 인원 5명</option>
             </select>
           </div>
-          <div>
-            <input type="submit" value="숙소 검색" class="font_small">
+          <div class="index_main_video_hostel_search_btn">
+            <label for="index_main_search" class="readable-hidden">숙소 검색</label>
+            <input type="submit" value="숙소 검색" id="index_main_search" class="font_small">
           </div>
-        </form> -->
+        </form>
         </div>
       </div>
     </article>
@@ -346,15 +348,15 @@
   <div class="index_footer_company clearfix">
     <div class="index_footer_company_selectors">
       <div class="index_footer_company_selectors_options font_small">
-        <div>
-          <select>
+        <div class="select-box-wrapper">
+          <select class="select-box">
             <option value="ko">한국어</option>
             <option value="ch">중국어</option>
             <option value="jp">일본어</option>
           </select>
         </div>
-        <div>
-          <select>
+        <div class="select-box-wrapper">
+          <select class="select-box">
             <option value="koc">KRW</option>
             <option value="chc">JPY</option>
             <option value="jpc">MAD</option>
