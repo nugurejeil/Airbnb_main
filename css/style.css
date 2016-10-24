@@ -68,10 +68,8 @@ button{
     height: auto;
     z-index: 1000;
     transform: translateX(-50%) translateY(-50%);
- /*background: url('//demosthenes.info/assets/images/polina.jpg') no-repeat;
-  background-size: cover;*/
-  transition: 1s opacity;
-  overflow-y: hidden;
+    transition: 1s opacity;
+    overflow-y: hidden;
 }
 .full_screen_video_btn{
   display: block;
@@ -104,10 +102,16 @@ button{
   width: 100%;
   background: white;
 }
+.index_header_menus{
+  position: relative;
+}
 .index_header_menus div{
   float: left;
-  height: 63px;
+  /*height: 63px;*/
   line-height: 63px;
+}
+.index_header_menus button{
+  display: none;
 }
 
 .index_header_logo{
@@ -115,11 +119,12 @@ button{
   top: 0;
   left: 0;
   width: 139px;
-  border: 1px solid #e0e4e4;
+  border: 0px;
 }
 .index_header_logo a{
   position: relative;
   display: block;
+  height: 65px;
 }
 .index_header_logo img{
   display: inline-block;
@@ -128,7 +133,7 @@ button{
   left: 50%;
   top: 50%;
   margin-left: -49.5px;
-  margin-top: 15px;
+  margin-top: -15px;
 }
 .index_header_search{
   width: 100%;
@@ -142,9 +147,11 @@ button{
 }
 .index_header_search input{
   width: 100%;
-  height: 100%;
+  /*height: 100%;*/
   border: 0;
-  margin-left: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+
 }
 .index_header_search form::before{
   content:'';
@@ -300,7 +307,9 @@ main{
   background-color: white;
 }
 .index_main_video_hostel_search_client-num select{
+  min-width: 117px;
   padding: 8.5px;
+
 }
 
 .index_main_video_hostel_search_btn{
@@ -724,7 +733,7 @@ main{
 .index_footer_company > div li{
   margin-bottom: 5px;
 }
-#index_footer .index_footer_company_selectors{
+.index_footer_company_selectors{
   flex: none;
   width: 250px;
   margin-left: 87px;
@@ -927,21 +936,40 @@ main{
     width: 50%;
     margin-bottom: 24px;
   }
-  .index_main_community figcaption{
-    width: 400px;
-  }
   .index_footer_company{
     max-width: 696px;
   }
   .index_footer_company > div{
     width: 98px;
   }
-  #index_footer .index_footer_company_selectors{
+  .index_footer_company_selectors{
     width: 153px;
   }
 }
 
 @media (max-width: 743px){
+  .index_header_menus button{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+  .index_header_search form{
+    margin: 0px;
+  }
+  .index_header_search input{
+    text-align: center;
+  }
+  .index_header_logo,
+  .index_header_menus_right_side{
+    display: none;
+  }
+  .index_header_menus .index_header_search{
+    float: none;
+    padding: 0 50px;
+    /*margin-left: 50px;
+    margin-right: 50px;*/
+  }
   .index_main_list_block.long{
     width: 100%;
     /*height: auto;*/
@@ -950,6 +978,7 @@ main{
     width: 100%;
   }
   .index_main_list_block1, .index_main_list_block2{
+    max-width: 100%;
     margin: 0;
   }
   .index_main_list_block1 li{
@@ -973,6 +1002,19 @@ main{
   }
   .index_main_community{
     display: none;
+  }
+
+  .index_footer_company_story,
+  .index_footer_company_discover,
+  .index_footer_company_hosting
+  {
+    display: none;
+  }
+  .index_footer_company_selectors{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
   }
 }
 
