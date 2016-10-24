@@ -29,7 +29,22 @@
   <h2 class="readable-hidden">header</h2>
     <nav>
       <div class="index_header_menus clearfix">
-        <button></button>
+        <button>
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div class="index_header_menus_small_nav">
+          <ul>
+            <li><a href="#">홈</a></li>
+            <li><a href="#">앱 다운로드</a></li>
+            <li><a href="#">호스팅 하기</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">둘러보기</a></li>
+            <li><a href="#">숙소 검색</a></li>
+            <li><a href="#">이용방법</a></li>
+            <li><a href="#">도움말</a></li>
+          </ul>
+        </div>
         <div class="index_header_logo">
           <a href="index.html" class="home_btn">
             <img src="img/Airbnb_Logo.svg" alt="#">
@@ -432,7 +447,26 @@
       });
       
     </script>
-  <script src="js/video.js"></script>
+    <script src="js/video.js"></script>
+    <script>
+      var small_menu = document.querySelector(".index_header_menus_small_nav")
+      var small_menu_btn = document.querySelector(".index_header_menus button");
+      var body = document.body;
+      
+      small_menu_btn.onclick = function(event){
+        event.stopPropagation();
+        small_menu.setAttribute("class", "index_header_menus_small_nav small_nav_slider");
+      }
+      small_menu.onclick = function(event){
+        event.stopPropagation();
+      }
+      body.onclick = function(event){
+        // event.stopPropagation();
+        small_menu.setAttribute("class", "index_header_menus_small_nav");
+      }
+  
+    </script>
+
 
 </body>
 </html>
