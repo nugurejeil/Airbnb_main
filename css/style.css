@@ -321,7 +321,7 @@ main{
 }
 .index_main_video_hostel_search_client-num select{
   min-width: 117px;
-  padding: 8.5px;
+  padding: 7.5px;
 
 }
 
@@ -345,11 +345,23 @@ main{
   background: white;
 }
 
-.index_main_event img{
+.welcome_img{
   position: absolute;
   top: 0;
   left: 0;
+  width:680px;
+  height: 344px;
+  background-image: url(../img/welcome.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /*z-index: 100;*/
 }
+
+/*.index_main_event img{
+  position: absolute;
+  top: 0;
+  left: 0;
+}*/
 .index_main_event_text{
   height: 345px;
   padding-left: 680px;
@@ -375,6 +387,7 @@ main{
   line-height: 42px;
   background: #138591;
   color: white;
+  border-radius: 5px;
 }
 
 .index_main_list{
@@ -919,7 +932,7 @@ main{
 }
 
 @media (max-width: 1127px){
-  .index_main_event img{
+  .welcome_img{
     width: 463px;
     height: 297px;
   }
@@ -931,13 +944,15 @@ main{
   .index_main_event_text p,
   .index_main_event_text a{
     width: 179px;
-    /*margin-left: 34px;*/
   }
   .index_main_event_text h2{
     font-size: 19px;
   }
   .index_main_event_text p{
     font-size: 16px
+  }
+  .index_main_event_text a{
+    font-size: 14px;
   }
   .index_main_event, .index_main_list_block1, .index_main_list_block2{
     max-width: 706px;
@@ -995,6 +1010,16 @@ main{
   .small_nav_slider{
     transform: translateX(0);
   }
+  /*body::before{
+    content: :'';
+    display: block;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 90;
+  }*/
   .index_header_search form{
     margin: 0px;
   }
@@ -1010,6 +1035,43 @@ main{
     padding: 0 50px;
     /*margin-left: 50px;
     margin-right: 50px;*/
+  }
+  .index_main_video_hostel_search{
+    padding: 0 10px;
+  }
+  .index_main_video_hostel_search_date,
+  .index_main_video_hostel_search_client-num{
+    display: none;
+  }
+  /*.index_main_event{
+    height: 364px;
+  }*/
+  .welcome_img{
+    width: 100%;
+    position: relative;
+    /*background-image: cover;*/
+  }
+  .index_main_event_text{
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+  /*  top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;*/
+    z-index: 10;
+  }
+  .index_main_event_text h2,
+  .index_main_event_text p,
+  .index_main_event_text a{
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    color: white;
   }
   .index_main_list_block.long{
     width: 100%;

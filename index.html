@@ -174,6 +174,7 @@
           <div class="index_main_video_hostel_search_btn">
             <label for="index_main_search" class="readable-hidden">숙소 검색</label>
             <input type="submit" value="숙소 검색" id="index_main_search" class="font_small">
+
           </div>
         </form>
         </div>
@@ -181,12 +182,12 @@
     </article>
 
     <article class="index_main_event clearfix">
-      
-      <img src="img/welcome.jpg" alt="#">
+      <div class="welcome_img"></div>
+      <!-- <img src="img/welcome.jpg" alt="#"> -->
       <div class="index_main_event_text font_small">
         <h2 class="font_bold">호스팅을 시작하면 무궁무진한 기회의 세상이 열립니다.</h2>
         <p>집에 있는 여유공간을 게스트와 공유하여 수입을 창출하세요.</p>
-        <a href="#" class="font_bold">오늘 등록하세요!</a>
+        <a href="#" class="font_bold">예상 수입을 확인해 보세요!</a>
       </div>
     </article>
 
@@ -456,6 +457,7 @@
       small_menu_btn.onclick = function(event){
         event.stopPropagation();
         small_menu.setAttribute("class", "index_header_menus_small_nav small_nav_slider");
+        body.setAttribute("class", "body_cover");
       }
       small_menu.onclick = function(event){
         event.stopPropagation();
